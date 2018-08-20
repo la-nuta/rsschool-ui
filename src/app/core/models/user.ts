@@ -16,6 +16,22 @@ export interface IProfile {
         graduationYear: string;
         faculty: string;
     };
+    notifications: {
+        fromTime?: string;
+        readyToReceive: string;
+        toTime?: string;
+        telegramUserName?: string;
+        types?: INotificationsTypes;
+    };
+}
+
+export interface INotificationsTypes {
+    sessionStudent: string;
+    deadline: string;
+    statusStudent: string;
+    score: string;
+    sessionLecturer: string;
+    statusMentor: string;
 }
 
 export interface IUserBase {

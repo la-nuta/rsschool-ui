@@ -4,6 +4,7 @@ import { InjectedFormProps, reduxForm } from 'redux-form';
 import ContactsForm from './ContactsForm';
 import EducationForm from './EducationForm';
 import NamesForm from './NamesForm';
+import NotificationsForm from './NotificationsForm';
 
 const ProfileForm = (props: InjectedFormProps) => {
     const { handleSubmit, pristine, submitting } = props;
@@ -18,6 +19,10 @@ const ProfileForm = (props: InjectedFormProps) => {
             <hr className="mb-5 mt-5" />
 
             <EducationForm />
+
+            <hr className="mb-5 mt-5" />
+
+            <NotificationsForm />
 
             <div className="row text-center">
                 <div className="form-group col-md-12">
